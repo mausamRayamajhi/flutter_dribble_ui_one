@@ -1,8 +1,8 @@
-import 'package:dribble_one/src/widgets/profile_categories.dart';
-import 'package:dribble_one/src/widgets/profile_detail.dart';
-import 'package:dribble_one/src/widgets/profile_menu.dart';
+import 'package:dribble_one/src/widgets/profile/profile_categories.dart';
+import 'package:dribble_one/src/widgets/profile/profile_detail.dart';
+import 'package:dribble_one/src/widgets/profile/profile_menu.dart';
+import 'package:dribble_one/src/widgets/title_large.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/painting.dart';
 
 class Profile extends StatelessWidget {
   @override
@@ -19,14 +19,8 @@ class Profile extends StatelessWidget {
           //mainAxisSize: MainAxisSize.max,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
-            Text(
-              'Center',
-              style: TextStyle(
-                color: Colors.black,
-                fontSize: 30.0,
-                letterSpacing: 2.0,
-                fontWeight: FontWeight.bold,
-              ),
+            TitleLarge(
+              title: 'Center',
             ),
             SizedBox(
               height: 20.0,

@@ -1,5 +1,5 @@
 import 'package:dribble_one/src/utils/constant.dart';
-import 'package:dribble_one/src/widgets/category.dart';
+import 'package:dribble_one/src/widgets/profile/category.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
