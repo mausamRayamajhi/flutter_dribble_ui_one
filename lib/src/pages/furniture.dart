@@ -1,4 +1,5 @@
-import 'package:dribble_one/src/widgets/furniture/furniture_categories.dart';
+import 'package:dribble_one/src/utils/constant.dart';
+import 'package:dribble_one/src/widgets/furniture/furniture_category.dart';
 import 'package:dribble_one/src/widgets/title_large.dart';
 import 'package:flutter/material.dart';
 
@@ -7,30 +8,36 @@ class Furniture extends StatelessWidget {
   Widget build(BuildContext context) {
     return Material(
       color: Colors.white,
-      child: Padding(
-        padding: const EdgeInsets.only(
-          left: 20.0,
-          right: 20.0,
-          top: 30.0,
-        ),
-        child: Column(
-          //mainAxisSize: MainAxisSize.max,
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: <Widget>[
-            TitleLarge(
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: <Widget>[
+          Padding(
+            padding: const EdgeInsets.only(
+              left: 20.0,
+              right: 20.0,
+              top: 40.0,
+            ),
+            child: TitleLarge(
               title: 'Furniture',
               icon: Icons.add_shopping_cart,
             ),
-            SizedBox(
-              height: 30.0,
-            ),
-            FurnitureCategories(),
-            SizedBox(
-              height: 30.0,
-            ),
-          ],
-        ),
+          ),
+          buildFurnitureCategories,
+        ],
       ),
     );
   }
+
+  final buildFurnitureCategories = Container(
+    height: 130.0,
+    child: ListView.builder(
+      scrollDirection: Axis.horizontal,
+      itemCount: furnitureCategoriesList.length,
+      itemBuilder: (context, int index) => Center(
+            child: FurnitureCategory(
+              item: furnitureCategoriesList[index],
+            ),
+          ),
+    ),
+  );
 }
