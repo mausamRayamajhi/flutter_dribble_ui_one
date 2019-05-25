@@ -10,5 +10,5 @@ Visit (https://www.mausamrayamajhi.com.np/)
 ### Whats implemented
  - Responsive Ui
 
-## NIC ASIA CLONE
+## PROFILE
  <img height="480px" src="screenshots/one.png">       
