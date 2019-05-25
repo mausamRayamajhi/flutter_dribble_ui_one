@@ -6,22 +6,27 @@ class Category extends StatelessWidget {
   Category({this.catg});
   @override
   Widget build(BuildContext context) {
-    print('Category = ' + catg.name.toString());
     return Column(
       mainAxisSize: MainAxisSize.min,
       children: <Widget>[
         Stack(
           overflow: Overflow.visible,
           children: <Widget>[
-            Container(
-              padding: EdgeInsets.all(10.0),
-              decoration: BoxDecoration(
-                shape: BoxShape.circle,
-                color: profile_info_categories_background,
-              ),
-              child: Icon(
-                catg.icon,
-                // size: 20.0,
+            GestureDetector(
+              onTap: () {
+                if (catg.name == listProfileCategories[0].name)
+                  Navigator.pushNamed(context, '/furniture');
+              },
+              child: Container(
+                padding: EdgeInsets.all(10.0),
+                decoration: BoxDecoration(
+                  shape: BoxShape.circle,
+                  color: profile_info_categories_background,
+                ),
+                child: Icon(
+                  catg.icon,
+                  // size: 20.0,
+                ),
               ),
             ),
             catg.number > 0

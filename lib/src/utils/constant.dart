@@ -10,6 +10,8 @@ const Color profile_info_general = Color(0xFFFFC85B);
 const Color profile_info_notification = Color(0xFF5DD1D3);
 const Color profile_item_color = Color(0xFFC4C5C9);
 
+const Color furnitureCateDisableColor = Color(0xFF939BA9);
+
 const List profileItems = [
   {'count': '846', 'name': 'Collect'},
   {'count': '51', 'name': 'Attention'},
@@ -22,6 +24,14 @@ List<Catg> listProfileCategories = [
   Catg(name: 'Delivery', icon: CustomIcon.truck, number: 0),
   Catg(name: 'Message', icon: CustomIcon.chat, number: 2),
   Catg(name: 'Service', icon: CustomIcon.money, number: 0),
+];
+
+List<FurnitureCatg> furnitureCategoriesList = [
+  FurnitureCatg(icon: Icons.desktop_windows, elivation: true),
+  FurnitureCatg(icon: CustomIcon.account_balance_wallet, elivation: false),
+  FurnitureCatg(icon: Icons.security, elivation: false),
+  FurnitureCatg(icon: CustomIcon.chat, elivation: false),
+  FurnitureCatg(icon: CustomIcon.money, elivation: false),
 ];
 
 List<ProfileMenu> profileMenuList = [
@@ -64,4 +74,10 @@ class Catg {
   IconData icon;
   int number;
   Catg({this.icon, this.name, this.number});
+}
+
+class FurnitureCatg {
+  IconData icon;
+  bool elivation;
+  FurnitureCatg({this.icon, this.elivation});
 }

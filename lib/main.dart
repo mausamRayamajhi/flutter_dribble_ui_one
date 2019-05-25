@@ -1,3 +1,4 @@
+import 'package:dribble_one/src/pages/furniture.dart';
 import 'package:dribble_one/src/pages/profile.dart';
 import 'package:flutter/material.dart';
 
@@ -9,9 +10,19 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
-      home: SafeArea(
-        child: Profile(),
-      ),
+      initialRoute: '/',
+      routes: <String, WidgetBuilder>{
+        '/': (BuildContext context) => SafeArea(
+              child: SafeArea(
+                child: Profile(),
+              ),
+            ),
+        '/furniture': (BuildContext context) => SafeArea(
+              child: SafeArea(
+                child: Furniture(),
+              ),
+            ),
+      },
     );
   }
 }
