@@ -17,7 +17,7 @@ class TitleLarge extends StatelessWidget {
           title,
           style: TextStyle(
             color: Colors.black,
-            fontSize: 30.0,
+            fontSize: 40.0,
             letterSpacing: 2.0,
             fontWeight: FontWeight.bold,
           ),

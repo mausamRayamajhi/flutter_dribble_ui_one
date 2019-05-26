@@ -9,9 +9,25 @@ const Color profile_info_privacy = Color(0xFFF369B7);
 const Color profile_info_general = Color(0xFFFFC85B);
 const Color profile_info_notification = Color(0xFF5DD1D3);
 const Color profile_item_color = Color(0xFFC4C5C9);
+const String imagePath = 'assets/image';
 
 const Color furnitureCateDisableColor = Color(0xFF939BA9);
-
+const List lampsImage = [
+  {'image': '$imagePath/a.jpg'},
+  {'image': '$imagePath/b.jpg'},
+  {'image': '$imagePath/c.jpg'},
+  {'image': '$imagePath/d.jpg'},
+  {'image': '$imagePath/e.jpg'},
+  {'image': '$imagePath/f.jpg'},
+];
+List<ProfileMenu> lampList = [
+  ProfileMenu(title: 'Landscape', subTitle: '384'),
+  ProfileMenu(title: 'Discus Pendant', subTitle: '274'),
+  ProfileMenu(title: 'Mushroom Lamp', subTitle: '374'),
+  ProfileMenu(title: 'Titanic Pendant', subTitle: '562'),
+  ProfileMenu(title: 'Torn Lighting', subTitle: '105'),
+  ProfileMenu(title: 'Abduction Pendant', subTitle: '365'),
+];
 const List profileItems = [
   {'count': '846', 'name': 'Collect'},
   {'count': '51', 'name': 'Attention'},
