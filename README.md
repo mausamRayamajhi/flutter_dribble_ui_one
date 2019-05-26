@@ -1,5 +1,5 @@
 # Flutter UI Challenges
-My effort on replicating various apps UI on flutter.
+My effort on replicating various apps UI on flutter...
 
 ## Credits
 This Ui sample is taken dribble (https://dribbble.com/shots/6459693-Creative-layout-design/attachments).
