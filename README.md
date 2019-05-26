@@ -11,4 +11,4 @@ Visit (https://www.mausamrayamajhi.com.np/)
  - Responsive Ui
 
 ## PROFILE
- <img height="480px" src="screenshots/one.png">       
+ <img height="480px" src="screenshots/one.png">        <img height="480px" src="screenshots/two.png">       
