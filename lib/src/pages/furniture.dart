@@ -11,7 +11,7 @@ class Furniture extends StatelessWidget {
   Widget build(BuildContext context) {
     Size deviceSize = MediaQuery.of(context).size;
     return Material(
-      //color: Colors.white,
+      color: Colors.white,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
@@ -49,7 +49,7 @@ class Furniture extends StatelessWidget {
             ),
           ),
           SizedBox(
-            height: 10.0,
+            height: 15.0,
           ),
           BottomItem(),
         ],
