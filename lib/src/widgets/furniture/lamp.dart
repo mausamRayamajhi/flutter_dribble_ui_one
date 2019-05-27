@@ -151,6 +151,13 @@ class Lamp extends StatelessWidget {
                       right: -20.0,
                       child: CustomSideButton(
                         icon: Icons.arrow_forward,
+                        fxn: () {
+                          Navigator.pushNamed(
+                            context,
+                            '/selectedItem',
+                            arguments: lampsImage[index]['image'],
+                          );
+                        },
                       ),
                     ),
                   ],

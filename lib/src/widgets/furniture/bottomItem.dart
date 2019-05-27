@@ -1,4 +1,5 @@
 import 'package:dribble_one/src/utils/constant.dart';
+import 'package:dribble_one/src/widgets/furniture/custom_side_button.dart';
 import 'package:flutter/material.dart';
 
 class BottomItem extends StatelessWidget {
@@ -111,16 +112,9 @@ class BottomItem extends StatelessWidget {
         Positioned(
           bottom: 20.0,
           right: 10.0,
-          child: Container(
-            padding: EdgeInsets.all(8.0),
-            decoration: BoxDecoration(
-                color: profile_info_background,
-                borderRadius: BorderRadius.circular(10.0)),
-            child: Icon(
-              Icons.arrow_forward,
-              size: 20.0,
-              color: Colors.white,
-            ),
+          child: CustomSideButton(
+            icon: Icons.arrow_forward,
+            fxn: () {},
           ),
         ),
       ],
