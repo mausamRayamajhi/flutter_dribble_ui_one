@@ -1,6 +1,7 @@
 import 'package:dribble_one/src/utils/constant.dart';
 import 'package:dribble_one/src/widgets/furniture/bottomItem.dart';
 import 'package:dribble_one/src/widgets/furniture/furniture_category.dart';
+import 'package:dribble_one/src/widgets/furniture/item_navigation.dart';
 import 'package:dribble_one/src/widgets/furniture/lamp.dart';
 import 'package:dribble_one/src/widgets/title_large.dart';
 import 'package:dribble_one/src/widgets/title_small.dart';
@@ -67,50 +68,7 @@ class Furniture extends StatelessWidget {
           Positioned(
             bottom: 40.0,
             right: 50.0,
-            child: Row(
-              children: <Widget>[
-                Container(
-                  height: 6.0,
-                  width: 6.0,
-                  decoration: BoxDecoration(
-                    color: furnitureCateDisableColor,
-                    shape: BoxShape.circle,
-                  ),
-                ),
-                SizedBox(
-                  width: 5.0,
-                ),
-                Container(
-                  height: 5.0,
-                  width: 20.0,
-                  decoration: BoxDecoration(
-                      color: Colors.blue[700],
-                      borderRadius: BorderRadius.circular(10.0)),
-                ),
-                SizedBox(
-                  width: 5.0,
-                ),
-                Container(
-                  height: 6.0,
-                  width: 6.0,
-                  decoration: BoxDecoration(
-                    color: furnitureCateDisableColor,
-                    shape: BoxShape.circle,
-                  ),
-                ),
-                SizedBox(
-                  width: 5.0,
-                ),
-                Container(
-                  height: 6.0,
-                  width: 6.0,
-                  decoration: BoxDecoration(
-                    color: furnitureCateDisableColor,
-                    shape: BoxShape.circle,
-                  ),
-                ),
-              ],
-            ),
+            child: ItemNavigation(),
           )
         ],
       ),
